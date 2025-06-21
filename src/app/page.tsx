@@ -1,103 +1,93 @@
-import Image from "next/image";
+const features = [
+	{
+		title: 'AI thông minh',
+		description: 'AI phân tích job description và tự động tối ưu nội dung CV phù hợp với vị trí ứng tuyển.',
+		icon: '/ai_icon.png',
+	},
+	{
+		title: 'ATS Scoring',
+		description: 'Kiểm tra và tối ưu CV để vượt qua hệ thống ATS của các công ty, tăng cơ hội được mời phỏng vấn.',
+		icon: '/at_icon.png',
+	},
+	{
+		title: '50+ Mẫu CV đẹp',
+		description: 'Thư viện mẫu CV đa dạng, thiết kế bởi chuyên gia HR phù hợp với mọi ngành nghề.',
+		icon: '/cv_template.png',
+	},
+	{
+		title: 'Xuất PDF chất lượng cao',
+		description: 'Tải CV dưới định dạng PDF với chất lượng chuyên nghiệp, sẵn sàng gửi cho nhà tuyển dụng.',
+		icon: '/pdf.png',
+	},
+	{
+		title: 'Hỗ trợ 24/7',
+		description: 'Đội ngũ chuyên gia HR hỗ trợ bạn tạo CV hoàn hảo và tư vấn chiến lược tìm việc.',
+		icon: '/247.png',
+	},
+	{
+		title: 'Đánh giá thực tế',
+		description: 'Nhận feedback chi tiết về CV để cải thiện cơ hội thành công.',
+		icon: '/feedback.png',
+	},
+]
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+	return (
+		<div className="font-sans text-gray-900">
+			{/* HERO */}
+			<section className="flex flex-col items-center justify-between bg-gray-100 p-12 md:flex-row">
+				<div className="flex-[1] p-8">
+					<h1 className="mb-2 font-bold lg:text-4xl">
+						Tạo CV chuyên nghiệp trong <span className="text-blue-600">vài phút</span>
+					</h1>
+					<p className="mt-5 mb-2 text-sm font-semibold text-blue-600 lg:text-[1.4rem]">
+						Sáng tạo CV với AI – nhanh chóng, đơn giản, chuyên nghiệp
+					</p>
+					<p className="text-sm lg:text-[1.1rem]">
+						Sử dụng AI thông minh để tạo CV ấn tượng, vượt qua ATS và thu hút nhà tuyển dụng. Hơn 50+ mẫu CV đẹp, xuất
+						PDF chất lượng cao.
+					</p>
+					<div className="mt-6 flex gap-4">
+						<button className="rounded-md bg-blue-600 px-4 py-1 text-sm text-white lg:px-7 lg:py-2.5 lg:text-base">
+							Bắt đầu viết CV
+						</button>
+						<button className="rounded-md border border-black px-4 py-1 lg:px-6 lg:py-2.5 lg:text-base">
+							Cập nhật CV
+						</button>
+					</div>
+					<div className="mt-4 flex items-center">
+						<img src="/tick.png" alt="tick" className="mr-2 w-4" />
+						<small>Miễn phí thử nghiệm</small>
+					</div>
+				</div>
+				<img src="/teamwork.png" alt="Team working" className="w-[90%] flex-[1] p-4 text-center md:w-[60%] xl:w-3xl" />
+			</section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+			{/* WHY SECTION */}
+			<section className="bg-gray-200 px-4 py-12 text-center">
+				<h2 className="mb-2 text-[2rem] font-bold">Tại sao chọn CVPro?</h2>
+				<p className="mb-6 text-base text-[1.1rem]">
+					Chúng tôi kết hợp công nghệ AI tiên tiến với thiết kế chuyên nghiệp để tạo ra CV hoàn hảo cho bạn.
+				</p>
+				<div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+					{features.map((f, i) => (
+						<div key={i} className="rounded-lg bg-white p-6 pb-17 text-left shadow">
+							<img src={f.icon} alt={f.title} className="mb-4 h-12 w-12" />
+							<h3 className="mb-2 text-[1.25rem] font-bold">{f.title}</h3>
+							<p className="text-[0.95rem] text-gray-700">{f.description}</p>
+						</div>
+					))}
+				</div>
+			</section>
+
+			{/* CTA BOTTOM */}
+			<section className="bg-blue-600 px-4 py-12 text-center text-white">
+				<h2 className="mb-2 text-2xl font-bold">Sẵn sàng tạo CV ấn tượng?</h2>
+				<p>Hàng nghìn ứng viên đã thành công với CVPro. Bắt đầu hành trình sự nghiệp mới của bạn ngay hôm nay!</p>
+				<button className="mt-6 rounded border-2 border-white bg-white px-6 py-3 font-bold text-blue-600">
+					+ Tạo CV mới
+				</button>
+			</section>
+		</div>
+	)
 }
