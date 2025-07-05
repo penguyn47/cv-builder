@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
+import { Suspense } from 'react'
 import { ToastContainer } from 'react-toastify'
 
 export default function RootLayout({
@@ -11,7 +12,9 @@ export default function RootLayout({
 		<html lang="en">
 			<body>
 				<Navbar />
-				<div>{children}</div>
+				<br />
+				<br />
+				<Suspense>{children}</Suspense>
 				<ToastContainer theme="dark" position="bottom-right" />
 			</body>
 		</html>
