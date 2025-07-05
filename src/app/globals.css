@@ -1,1 +1,13 @@
 @import 'tailwindcss';
+
+@media print {
+	#resumePreviewContent {
+		zoom: 1 !important;
+		padding: 1.5rem;
+	}
+}
+
+@page {
+	size: A4;
+	margin: 0px;
+}
