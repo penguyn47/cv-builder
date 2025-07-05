@@ -2,6 +2,7 @@ import { IoMdClose } from 'react-icons/io'
 
 import NewCVForm from '@/components/forms/NewCVForm'
 import { cn } from '@/lib/utils'
+import NewCVWithJDForm from './forms/NewCVWithJDForm'
 
 interface FormModalProps {
 	isOpen: boolean
@@ -14,6 +15,8 @@ const getFormContent = (formName: string) => {
 	switch (formName.toLowerCase()) {
 		case 'newcv':
 			return <NewCVForm />
+		case 'newcvwithjd':
+			return <NewCVWithJDForm />
 		default:
 			return <p className="text-red-500">Form không tồn tại!</p>
 	}
