@@ -1,0 +1,57 @@
+export const dummy = {
+	id: '123e4567-e89b-12d3-a456-426614174000',
+	title: 'Lorem Ipsum Resume',
+	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	photoUrl: '/default-avt.png',
+	summary:
+		'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+	firstName: 'Lorem',
+	lastName: 'Ipsum',
+	jobTitle: 'Dolor Sit Amet',
+	city: 'Lorem City',
+	country: 'Ipsum Country',
+	phone: '+123-456-7890',
+	email: 'lorem.ipsum@example.com',
+	workExperiences: [
+		{
+			id: 'work1',
+			company: 'Lorem Corp',
+			position: 'Senior Developer',
+			startDate: '2020-01-01',
+			endDate: '2023-06-30',
+			description:
+				'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
+		},
+		{
+			id: 'work2',
+			company: 'Ipsum Ltd',
+			position: 'Junior Designer',
+			startDate: '2018-03-15',
+			endDate: '2019-12-31',
+			description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse.',
+		},
+	],
+	educations: [
+		{
+			id: 'edu1',
+			institution: 'Lorem University',
+			degree: 'Bachelor of Science',
+			fieldOfStudy: 'Computer Science',
+			startDate: '2014-09-01',
+			endDate: '2018-06-30',
+		},
+		{
+			id: 'edu2',
+			institution: 'Ipsum College',
+			degree: 'Diploma',
+			fieldOfStudy: 'Graphic Design',
+			startDate: '2012-09-01',
+			endDate: '2014-06-30',
+		},
+	],
+	skills: ['Lorem', 'Ipsum', 'Dolor', 'Sit', 'Amet'],
+	createdAt: '2023-01-01T12:00:00Z',
+	updatedAt: '2025-06-22T12:00:00Z',
+	backgroundColor: '#F0F0F0',
+	fontFamily: 'Arial',
+}
