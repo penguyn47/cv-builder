@@ -1,4 +1,5 @@
 import { readFile, writeFile } from 'fs/promises'
+import { promises as fs } from 'fs'
 import { v4 as uuidv4 } from 'uuid'
 import path from 'path'
 import { Resume } from './types'
@@ -6,6 +7,15 @@ import { Resume } from './types'
 const RESUMES_FILE = path.join(process.cwd(), 'data', 'resumes.json')
 
 export class ResumeService {
+	public async ResumeService() {
+		try {
+			await fs.access(RESUMES_FILE)
+		} catch {
+			await fs.mkdir(path.dirname(RESUMES_FILE), { recursive: true })
+			await fs.writeFile(RESUMES_FILE, JSON.stringify([]))
+		}
+	}
+
 	private async readResumes(): Promise<Resume[]> {
 		try {
 			const data = await readFile(RESUMES_FILE, 'utf-8')
@@ -43,6 +53,13 @@ export class ResumeService {
 				...edu,
 				id: uuidv4(),
 			})),
+			bgColor: '#FFFFFF',
+			primaryColor: '#444444',
+			secondaryColor: '#777777',
+			textColor: '#000000',
+			fontFamily: 'Arial',
+			selectedLayoutIndex: 0,
+			selectedStyleIndex: 0,
 		}
 
 		resumes.push(newResume)
