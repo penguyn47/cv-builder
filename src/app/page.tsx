@@ -38,9 +38,9 @@ export default function Home() {
 			<section className="flex flex-col items-center justify-between bg-gray-100 p-12 md:flex-row">
 				<div className="flex-[1] p-8">
 					<h1 className="mb-2 font-bold lg:text-4xl">
-						Tạo CV chuyên nghiệp trong <span className="text-blue-600">vài phút</span>
+						Tạo CV chuyên nghiệp trong <span className="text-gray-500">vài phút</span>
 					</h1>
-					<p className="mt-5 mb-2 text-sm font-semibold text-blue-600 lg:text-[1.4rem]">
+					<p className="mt-5 mb-2 text-sm font-semibold text-gray-500 lg:text-[1.4rem]">
 						Sáng tạo CV với AI – nhanh chóng, đơn giản, chuyên nghiệp
 					</p>
 					<p className="text-sm lg:text-[1.1rem]">
@@ -48,7 +48,7 @@ export default function Home() {
 						PDF chất lượng cao.
 					</p>
 					<div className="mt-6 flex gap-4">
-						<button className="rounded-md bg-blue-600 px-4 py-1 text-sm text-white lg:px-7 lg:py-2.5 lg:text-base">
+						<button className="rounded-md bg-gray-600 px-4 py-1 text-sm text-white lg:px-7 lg:py-2.5 lg:text-base">
 							Bắt đầu viết CV
 						</button>
 						<button className="rounded-md border border-black px-4 py-1 lg:px-6 lg:py-2.5 lg:text-base">
@@ -81,10 +81,10 @@ export default function Home() {
 			</section>
 
 			{/* CTA BOTTOM */}
-			<section className="bg-blue-600 px-4 py-12 text-center text-white">
+			<section className="bg-gray-600 px-4 py-12 text-center text-white">
 				<h2 className="mb-2 text-2xl font-bold">Sẵn sàng tạo CV ấn tượng?</h2>
 				<p>Hàng nghìn ứng viên đã thành công với CVPro. Bắt đầu hành trình sự nghiệp mới của bạn ngay hôm nay!</p>
-				<button className="mt-6 rounded border-2 border-white bg-white px-6 py-3 font-bold text-blue-600">
+				<button className="mt-6 rounded border-2 border-white bg-white px-6 py-3 font-bold text-gray-600">
 					+ Tạo CV mới
 				</button>
 			</section>
